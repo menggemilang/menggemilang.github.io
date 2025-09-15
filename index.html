@@ -17,40 +17,11 @@
         nav{
             background-color: #43a1ff;
             color: black;
-
-
-
-
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
         }
 
         .nav-link{
             color: rgb(0, 0, 0);
             font-size: 20px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .nav-link:hover {
-            color: #ffffff !important;
-            transform: translateY(-2px);
-        }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: #ffffff;
-            transition: width 0.3s ease;
-        }
-
-        .nav-link:hover::after {
-            width: 100%;
         }
 
         .hero{
@@ -62,461 +33,21 @@
             background-position: center; /* Posisikan gambar di tengah */
             background-repeat: no-repeat; /* Hindari pengulangan gambar */
             backdrop-filter: blur(1000vh); /* Efek blur pada latar belakang */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.3);
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            color: white;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            animation: fadeInDown 1s ease;
-        }
-
-        .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            animation: fadeInUp 1s ease;
         }
 
         .btn {
             border-radius: 20px;
-            padding: 10px 30px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .btn-primary {
-            background: linear-gradient(45deg, #43a1ff, #1a5bb0);
-            border: none;
-        }
-
-        .section-title {
-            position: relative;
-            display: inline-block;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            width: 50%;
-            height: 3px;
-            background: linear-gradient(to right, #43a1ff, #1a5bb0);
-            bottom: 0;
-            left: 25%;
-        }
-
-        .card {
-            transition: all 0.3s ease;
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            width: 220px; /* Fixed width for consistent cards */
-            margin-bottom: 20px;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .card-img-top {
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover .card-img-top {
-            transform: scale(1.05);
-        }
-        
-        /* Square Game Card Images */
-        .card-img-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 100%; /* 1:1 Aspect Ratio */
-            overflow: hidden;
-            border-radius: 15px 15px 0 0;
-        }
-        
-        .card-img-container img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        /* Animations */
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Features section */
-        .features {
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf9 100%);
-            padding: 80px 0;
-        }
-
-        .feature-box {
-            text-align: center;
-            padding: 30px;
-            border-radius: 15px;
-            background: white;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-            height: 100%;
-        }
-
-        .feature-box:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            color: #43a1ff;
-        }
-
-        /* Newsletter section */
-        .newsletter {
-            background: linear-gradient(45deg, #43a1ff, #1a5bb0);
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .newsletter h2 {
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .newsletter p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .newsletter-form {
-            max-width: 500px;
-            margin: 0 auto;
-            display: flex;
-        }
-
-        .newsletter-form input {
-            flex: 1;
-            padding: 15px;
-            border: none;
-            border-radius: 30px 0 0 30px;
-            font-size: 1rem;
-        }
-
-        .newsletter-form button {
-            padding: 15px 30px;
-            background: #ff6b6b;
-            color: white;
-            border: none;
-            border-radius: 0 30px 30px 0;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .newsletter-form button:hover {
-            background: #ff5252;
-        }
-
-        /* Footer */
-        footer {
-            background: #1a1a1a;
-            color: #fff;
-            padding: 50px 0 20px;
-        }
-
-        .footer-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-bottom: 30px;
-        }
-
-        .footer-section {
-            flex: 1;
-            min-width: 250px;
-            margin-bottom: 30px;
-        }
-
-        .footer-section h3 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .footer-section h3::after {
-            content: '';
-            position: absolute;
-            width: 50px;
-            height: 2px;
-            background: #43a1ff;
-            bottom: 0;
-            left: 0;
-        }
-
-        .footer-section ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-section ul li a {
-            color: #bbb;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-section ul li a:hover {
-            color: #43a1ff;
-            padding-left: 5px;
-        }
-
-        .social-links a {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background: #333;
-            border-radius: 50%;
-            margin-right: 10px;
-            text-align: center;
-            line-height: 40px;
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            background: #43a1ff;
-            transform: translateY(-3px);
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #333;
-            font-size: 0.9rem;
-            color: #bbb;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero p {
-                font-size: 1.2rem;
-            }
-            
-            .newsletter-form {
-                flex-direction: column;
-            }
-            
-            .newsletter-form input,
-            .newsletter-form button {
-                width: 100%;
-                border-radius: 30px;
-                margin-bottom: 10px;
-            }
-        }
-        
-        /* Login Popup Styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            animation: fadeIn 0.3s ease;
-        }
-        
-        .modal-content {
-            background-color: #fff;
-            margin: 0 auto;
-            padding: 30px;
-            border-radius: 15px;
-            width: 90%;
-            max-width: 400px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            position: relative;
-            animation: slideIn 0.3s ease;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-            position: absolute;
-            top: 15px;
-            right: 20px;
-        }
-        
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-        }
-        
-        .modal-header {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-        
-        .modal-header h2 {
-            margin: 0;
-            color: #1a5bb0;
-            font-weight: 700;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: #333;
-        }
-        
-        .form-group input {
-            width: 100%;
-            padding: 12px 15px;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            font-size: 16px;
-            transition: border-color 0.3s ease;
-        }
-        
-        .form-group input:focus {
-            border-color: #43a1ff;
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(67, 161, 255, 0.2);
-        }
-        
-        .btn-login {
-            width: 100%;
-            padding: 12px;
-            background: linear-gradient(45deg, #43a1ff, #1a5bb0);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 18px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-login:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(26, 91, 176, 0.4);
-        }
-        
-        .forgot-password {
-            text-align: center;
-            margin-top: 15px;
-        }
-        
-        .forgot-password a {
-            color: #43a1ff;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        
-        .forgot-password a:hover {
-            text-decoration: underline;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        @keyframes slideIn {
-            from { 
-                transform: translateY(-40%);
-                opacity: 0;
-            }
-            to { 
-                transform: translateY(-50%);
-                opacity: 1;
-            }
-        }
     </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg fixed-top text-dark" data-bs-theme="dark">
 <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark container fixed-top" data-bs-theme="dark"> -->
-  <div class="container d-flex">  
+  <div class="container d-flex"> 
       <!-- bagian 1 logo  -->
     <div class="d-flex">
-        <a href=""><img src="./hoyoversewebsite/HoYoverse-Logo.png" alt="HoYoverse Logo" width="150"></a>
+        <a href=""><img src="./hoyoversewebsite/HoYoverse-Logo.png" alt="" width="150"></a>
     </div>
 
     <!-- menampilkan menu via mobile / repsonsive -->
@@ -534,13 +65,13 @@
             <a href="#ourgames" class="nav-link">🎮Our Games</a>
         </li>
         <li class="nav-item me-5">
-            <a href="#contact" class="nav-link">📞Contact Us</a>
+            <a href="" class="nav-link">📞Contact Us</a>
         </li>
       </ul>
       
       <div class="d-flex" role="search">
           <form class="d-flex" role="search">
-            <button id="loginBtn" class="btn btn-outline-success bg-success text-white" type="button">🔒Login</button>
+            <button class="btn btn-outline-success bg-success text-white" type="submit">🔒Login</button>
           </form>
       </div>
     </div>
@@ -554,295 +85,53 @@
     </div>
 </div>
 <h2 id="ourgames" class="container text-center mt-5">Enjoy Our Games</h2>
-<div class="container d-flex justify-content-center align-items-center flex-wrap my-5 gap-4">
-    <div class="d-flex flex-wrap justify-content-center gap-4">
+<div class="container d-flex justify-content-center align-items-center my-5 gap-5">
     <div>
         <div class="card">
-            <div class="card-img-container">
-                <img src="./hoyoversewebsite/Genshin_Impact.webp" alt="Genshin Impact">
-            </div>
+            <img src="./hoyoversewebsite/Genshin_Impact.webp" class="card-img-top" alt="..." weight="200" height="200">
             <div class="card-body">
                 <h5 class="card-title">Genshin Impact</h5>
                 <p class="card-text">Fantasy RPG: Explore the vast and mysterious world of Teyvat, and discover your destiny</p>
-                <a href="./games/genshin-impact.html" class="btn btn-primary">See More</a>
+                <a href="#" class="btn btn-primary">See More</a>
             </div>
         </div>
     </div>
     <div>
         <div class="card">
-            <div class="card-img-container">
-                <img src="./hoyoversewebsite/Honkai_Star_Rail.webp" alt="Honkai: Star Rail">
-            </div>
+            <img src="./hoyoversewebsite/Honkai_Star_Rail.webp" class="card-img-top" alt="..." weight="200" height="200">
             <div class="card-body">
                 <h5 class="card-title">Honkai: Star Rail</h5>
                 <p class="card-text">Turn-Based Sci-Fi: Board the Star Rail to traverse endless galaxies, where every choice is your fate.</p>
-                <a href="./games/honkai-star-rail.html" class="btn btn-primary">See More</a>
+                <a href="#" class="btn btn-primary">See More</a>
             </div>
         </div>
     </div>
     <div>
         <div class="card">
-            <div class="card-img-container">
-                <img src="./hoyoversewebsite/Zenless_Zone_Zero.jpg" alt="Zenless Zone Zero">
-            </div>
+            <img src="./hoyoversewebsite/Zenless_Zone_Zero.jpg" class="card-img-top" alt="..." weight="200" height="200">
             <div class="card-body">
                 <h5 class="card-title">Zenless Zone Zero</h5>
                 <p class="card-text">Urban Fantasy Action RPG: Join the adventure in New Eridu and face challenges in a ruined city.</p>
-                <a href="./games/zenless-zone-zero.html" class="btn btn-primary">See More</a>
+                <a href="#" class="btn btn-primary">See More</a>
             </div>
         </div>
     </div>
     <div>
         <div class="card">
-            <div class="card-img-container">
-                <img src="./hoyoversewebsite/Honkai_nexus_anima.jpeg" alt="Honkai: Nexus Anima">
-            </div>
+            <img src="./hoyoversewebsite/Honkai_nexus_anima.jpeg" class="card-img-top" alt="..." weight="200" height="200">
             <div class="card-body">
                 <h5 class="card-title">Honkai: Nexus Anima</h5>
                 <p class="card-text">Enjoy the world of companionship, deploy your companion into a battle of chess.</p>
-                <a href="./games/honkai-nexus-anima.html" class="btn btn-primary">See More</a>
+                <a href="#" class="btn btn-primary">See More</a>
             </div>
         </div>
     </div>
 
 </div>
 </div>
-</div>
-
-<!-- START: Features Section (Added by Qwen Code) -->
-<section class="features">
-    <div class="container">
-        <h2 class="text-center section-title">Why Choose Hoyoverse?</h2>
-        <p class="text-center mb-5">Experience the best in gaming with our unique features</p>
-        
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="feature-box">
-                    <div class="feature-icon">🎮</div>
-                    <h3>Immersive Worlds</h3>
-                    <p>Explore vast, beautifully crafted universes with rich lore and engaging storylines that captivate players worldwide.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="feature-box">
-                    <div class="feature-icon">🌟</div>
-                    <h3>Unique Characters</h3>
-                    <p>Meet unforgettable characters with distinct personalities, each with their own abilities and backstories to discover.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="feature-box">
-                    <div class="feature-icon">🎵</div>
-                    <h3>Stunning Soundtracks</h3>
-                    <p>Enjoy award-winning musical compositions that enhance every moment of your gaming experience.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- END: Features Section (Added by Qwen Code) -->
-
-<!-- START: Newsletter Section (Added by Qwen Code) -->
-<section class="newsletter">
-    <div class="container">
-        <h2>Stay Updated</h2>
-        <p>Subscribe to our newsletter and never miss any updates, events, or new game releases!</p>
-        <form class="newsletter-form">
-            <input type="email" placeholder="Enter your email address" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
-</section>
-<!-- END: Newsletter Section (Added by Qwen Code) -->
-
-<!-- START: Contact Us Section (Added by Qwen Code) -->
-<section id="contact" class="container my-5">
-    <h2 class="text-center section-title">Contact Us</h2>
-    <div class="accordion" id="contactAccordion">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="contactHeading">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactSection" aria-expanded="false" aria-controls="contactSection">
-                    📞 Contact Information
-                </button>
-            </h2>
-            <div id="contactSection" class="accordion-collapse collapse" aria-labelledby="contactHeading" data-bs-parent="#contactAccordion">
-                <div class="accordion-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>Get in Touch</h4>
-                            <p>If you have any questions or feedback, feel free to reach out to us through the following channels:</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><strong>Email:</strong> <a href="mailto:support@hoyoverse.com">support@hoyoverse.com</a></li>
-                                <li class="mb-2"><strong>Customer Service:</strong> <a href="mailto:customerservice@hoyoverse.com">customerservice@hoyoverse.com</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Follow Us</h4>
-                            <div class="social-links">
-                                <a href="https://instagram.com/hoyoverse" target="_blank"><span>📷 Instagram</span></a><br>
-                                <a href="https://youtube.com/hoyoverse" target="_blank"><span>▶️ YouTube</span></a><br>
-                                <a href="https://twitter.com/hoyoverse" target="_blank"><span>🐦 Twitter</span></a><br>
-                                <a href="https://facebook.com/hoyoverse" target="_blank"><span>📘 Facebook</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- END: Contact Us Section (Added by Qwen Code) -->
-
 </body>
 
-<!-- START: Enhanced Footer (Added by Qwen Code) -->
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About Hoyoverse</h3>
-                <p>Hoyoverse is a leading developer and publisher of innovative entertainment experiences. We create immersive worlds that captivate millions of players worldwide.</p>
-                <div class="social-links">
-                    <a href="#"><span>📘</span></a>
-                    <a href="#"><span>🐦</span></a>
-                    <a href="#"><span>📷</span></a>
-                    <a href="#"><span>▶️</span></a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#ourgames">Games</a></li>
-                    <li><a href="#">News & Events</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Legal</h3>
-                <ul>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Content Policy</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Hoyoverse. All rights reserved. All trademarks referenced herein are the properties of their respective owners.</p>
-        </div>
-    </div>
+<footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2024 Hoyoverse. All rights reserved.</p>
 </footer>
-<!-- END: Enhanced Footer (Added by Qwen Code) -->
-
-<!-- START: Smooth Scrolling Script (Added by Qwen Code) -->
-<script>
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                window.scrollTo({
-                    top: target.offsetTop - 70, // Adjust for fixed navbar
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-</script>
-
-<!-- START: Login Popup Modal (Added by Qwen Code) -->
-<div id="loginModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="modal-header">
-            <h2>HoYoVerse Account Login</h2>
-        </div>
-        <form id="loginForm">
-            <div class="form-group">
-                <label for="username">Username or Email</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit" class="btn-login">Login</button>
-            <div class="forgot-password">
-                <a href="#">Forgot Password?</a>
-            </div>
-        </form>
-    </div>
-</div>
-<!-- END: Login Popup Modal (Added by Qwen Code) -->
-
-<!-- START: Login Popup Script (Added by Qwen Code) -->
-<script>
-    // Login Popup Functionality
-    document.addEventListener('DOMContentLoaded', function() {
-        // Get the modal
-        var modal = document.getElementById("loginModal");
-        
-        // Get the button that opens the modal
-        var btn = document.getElementById("loginBtn");
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks the button, open the modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        
-        // Center modal on window resize
-        window.addEventListener('resize', function() {
-            if (modal.style.display === "block") {
-                modal.style.display = "block";
-            }
-        });
-        
-        // Handle form submission
-        document.getElementById("loginForm").addEventListener("submit", function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            
-            // Simple validation
-            if (username.trim() === "") {
-                alert("Please enter your username or email");
-                return;
-            }
-            
-            if (password.length < 6) {
-                alert("Password must be at least 6 characters long");
-                return;
-            }
-            
-            // In a real application, you would send the login data to a server here
-            // For this example, we'll just close the modal
-            alert("Login successful! Welcome back, " + username + "!");
-            modal.style.display = "none";
-            
-            // Reset form
-            document.getElementById("loginForm").reset();
-        });
-    });
-</script>
 </html>
