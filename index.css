@@ -75,3 +75,16 @@ a:hover {
 .modal-content {
     border-radius: 10px;
 }
+
+/* GAYA CAROUSEL DOKUMENTASI */
+#carouselKegiatan .carousel-item {
+    height: 60vh; /* Tentukan tinggi tetap untuk setiap slide, misal 60% dari tinggi layar */
+    background-color: #212529; /* Latar belakang gelap untuk kontras jika gambar tidak memenuhi lebar */
+}
+
+#carouselKegiatan .carousel-item img {
+    height: 100%; /* Buat tinggi gambar mengisi tinggi slide */
+    width: auto; /* Lebar akan menyesuaikan secara otomatis untuk menjaga proporsi */
+    object-fit: contain; /* Pastikan seluruh gambar muat tanpa terpotong atau distorsi */
+    margin: 0 auto; /* Pusatkan gambar secara horizontal di dalam slide */
+}
