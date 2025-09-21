@@ -1,137 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HoYoVerse Universe</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
-    <style>
-        body{
-            height: 1000vh;
-        }
-
-        nav{
-            background-color: #43a1ff;
-            color: black;
-        }
-
-        .nav-link{
-            color: rgb(0, 0, 0);
-            font-size: 20px;
-        }
-
-        .hero{
-            height: 60vh;
-            background-color: rgba(197, 234, 255, 1.0);
-            /* Tambahan kode untuk background image */
-            background-image: url('./hoyoversewebsite/background.jpg'); /* Ganti URL ini dengan lokasi gambarmu */
-            background-size: cover; /* Atur agar gambar menutupi seluruh area */
-            background-position: center; /* Posisikan gambar di tengah */
-            background-repeat: no-repeat; /* Hindari pengulangan gambar */
-            backdrop-filter: blur(1000vh); /* Efek blur pada latar belakang */
-        }
-
-        .btn {
-            border-radius: 20px;
-        }
-
-    </style>
+    <title>GKM LD AL-MUHANDIS FT-UH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg fixed-top text-dark" data-bs-theme="dark">
-<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark container fixed-top" data-bs-theme="dark"> -->
-  <div class="container d-flex"> 
-      <!-- bagian 1 logo  -->
-    <div class="d-flex">
-        <a href=""><img src="./hoyoversewebsite/HoYoverse-Logo.png" alt="" width="150"></a>
-    </div>
 
-    <!-- menampilkan menu via mobile / repsonsive -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="#menu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="assets/logo-almuhandis.png" alt="Logo LD Al-Muhandis" width="30" class="d-inline-block align-text-top me-2">
+          GKM LD AL-MUHANDIS FT-UH
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#departemen">Departemen</a></li>
+            <li class="nav-item"><a class="nav-link" href="#program-kerja">Program Kerja</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <!-- bagian 2 menu list tengah -->
-    <div class="collapse navbar-collapse text-dark" id="menu">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item me-5">
-          <a class="nav-link " aria-current="page" href="#" class="">🏠Home</a>
-        </li>
-        <li class="nav-item me-5">
-            <a href="#ourgames" class="nav-link">🎮Our Games</a>
-        </li>
-        <li class="nav-item me-5">
-            <a href="" class="nav-link">📞Contact Us</a>
-        </li>
-      </ul>
+    <main>
+      <section id="beranda" class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">LEMBAGA DAKWAH AL-MUHANDIS</h1>
+            <p class="lead mt-3">“Gugus Kerja Mahasiswa Lembaga Dakwah Al-Muhandis Fakultas Teknik Universitas Hasanuddin, ialah Lembaga dakwah ahlussunnah wal jamaah yang berperan dalam mensyiarkan agama islam sebagai salah satu wujud implementasi pembentukan karakter MARITIM melalui berbagai program kerja keagamaan, yang bertujuan meningkatkan ilmu dan wawasan keislaman, serta karakter religius dalam lingkup Fakultas Teknik Universitas Hasanuddin”</p>
+        </div>
+      </section>
+
+      <section id="departemen" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">DEPARTEMEN</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card department-card" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Departemen Kaderisasi" data-image="assets/kadersasi.jpg" data-description="Deskripsi detail Departemen Kaderisasi...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">01. Departemen Kaderisasi</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card department-card" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Departemen Pendidikan Al-Qur'an" data-image="assets/pendidikan-quran.jpg" data-description="Deskripsi detail Departemen Pendidikan Al-Qur'an...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">02. Departemen Pendidikan Al-Qur'an</h5>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-4">
+              <div class="card department-card" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Departemen Dakwah dan Pelatihan" data-image="assets/dakwah-pelatihan.jpg" data-description="Deskripsi detail Departemen Dakwah dan Pelatihan...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">03. Departemen Dakwah dan Pelatihan</h5>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-4">
+              <div class="card department-card" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Departemen Komunikasi dan Informasi" data-image="assets/komunikasi.jpg" data-description="Deskripsi detail Departemen Komunikasi dan Informasi...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">04. Departemen Komunikasi dan Informasi</h5>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-4">
+              <div class="card department-card" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Departemen Kesekretariatan dan Logistik" data-image="assets/kesekretariatan.jpg" data-description="Deskripsi detail Departemen Kesekretariatan dan Logistik...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">05. Departemen Kesekretariatan dan Logistik</h5>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-4">
+              <div class="card department-card" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Departemen Kemuslimahan" data-image="assets/kemuslimahan.jpg" data-description="Deskripsi detail Departemen Kemuslimahan...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">06. Departemen Kemuslimahan</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="program-kerja" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-5">PROGRAM KERJA</h2>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="card program-card" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Engineering Character Building (ECB)" data-image="assets/lcb.jpg" data-description="Deskripsi detail Program Kerja ECB...">
+                <img src="assets/lcb.jpg" class="card-img-top" alt="Gambar ECB">
+                <div class="card-body">
+                  <h5 class="card-title">Engineering Character Building (ECB)</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card program-card" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Engineering Ramadhan Campus (ERC)" data-image="assets/ifc.jpg" data-description="Deskripsi detail Program Kerja ERC...">
+                <img src="assets/ifc.jpg" class="card-img-top" alt="Gambar ERC">
+                <div class="card-body">
+                  <h5 class="card-title">Engineering Ramadhan Campus (ERC)</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card program-card" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Pelatihan Seputar Keteknikan" data-image="assets/pelatihan-keteknikan.jpg" data-description="Deskripsi detail Program Kerja Pelatihan Seputar Keteknikan...">
+                <img src="assets/pelatihan-keteknikan.jpg" class="card-img-top" alt="Gambar Pelatihan Seputar Keteknikan">
+                <div class="card-body">
+                  <h5 class="card-title">Pelatihan Seputar Keteknikan</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card program-card" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Kajian Spesial Kemuslimahan" data-image="assets/kajian-kemuslimahan.jpg" data-description="Deskripsi detail Program Kerja Kajian Spesial Kemuslimahan...">
+                <img src="assets/kajian-kemuslimahan.jpg" class="card-img-top" alt="Gambar Kajian Spesial Kemuslimahan">
+                <div class="card-body">
+                  <h5 class="card-title">Kajian Spesial Kemuslimahan</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card program-card" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Kelompok Belajar Islam dan Al-Qur'an" data-image="assets/kelompok-belajar.jpg" data-description="Deskripsi detail Program Kerja Kelompok Belajar...">
+                <img src="assets/kelompok-belajar.jpg" class="card-img-top" alt="Gambar Kelompok Belajar">
+                <div class="card-body">
+                  <h5 class="card-title">Kelompok Belajar Islam dan Al-Qur'an</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card program-card" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Ta'lim Rutin: Bedah Buku Islam" data-image="assets/taklim.jpg" data-description="Deskripsi detail Program Kerja Ta'lim Rutin...">
+                <img src="assets/taklim.jpg" class="card-img-top" alt="Gambar Ta'lim Rutin">
+                <div class="card-body">
+                  <h5 class="card-title">Ta'lim Rutin: Bedah Buku Islam</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       
-      <div class="d-flex" role="search">
-          <form class="d-flex" role="search">
-            <button class="btn btn-outline-success bg-success text-white" type="submit">🔒Login</button>
-          </form>
+    <footer id="kontak" class="py-4 text-center text-white">
+        <div class="container">
+            <div class="mb-3">
+                <a href="https://www.instagram.com/almuhandisftuh/" target="_blank" class="text-white mx-2">
+                    <img src="assets/instagram-icon.png" alt="Instagram" width="24" height="24">
+                </a>
+                <a href="https://www.facebook.com/Al.Muhandis.ft.uh/" target="_blank" class="text-white mx-2">
+                    <img src="assets/facebook-icon.png" alt="Facebook" width="24" height="24">
+                </a>
+            </div>
+            <p class="mb-0">
+                Contact Us: <br> 
+                • Email:
+                <a href="mailto:sekretaris.almuhandis@gmail.com" class="text-white text-decoration-none">sekretaris.almuhandis@gmail.com</a> <br>
+                • Muslim:
+                <a href="https://wa.me/6282151115740" target="_blank" class="text-white text-decoration-none">+62 821-5111-5740</a>
+                • Muslimah: <a href="https://wa.me/6285397352249" target="_blank" class="text-white text-decoration-none">+62 853-9735-2249</a>
+                
+            </p>
+        </div>
+    </footer>
+    </main>
+
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="detailModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="" class="img-fluid mb-3" id="modalImage" alt="Gambar Detail">
+            <p id="modalDescription"></p>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- bagian 3 -->
-</nav>
-<div class="hero pt-5 mt-5 d-flex flex-column justify-content-center align-items-center flex-wrap">
-    <div class="container text-center">
-        <h1 class="mb-5">Welcome to Hoyoverse</h1>
-        <p class="m-2">"Dive into Epic Adventures, Crafted by Tech Otakus to Save the World."</p>
-        <button type="button" class="btn btn-primary mt-5 px-5">Play Here</button>
-    </div>
-</div>
-<h2 id="ourgames" class="container text-center mt-5">Enjoy Our Games</h2>
-<div class="container d-flex justify-content-center align-items-center my-5 gap-5">
-    <div>
-        <div class="card">
-            <img src="./hoyoversewebsite/Genshin_Impact.webp" class="card-img-top" alt="..." weight="200" height="200">
-            <div class="card-body">
-                <h5 class="card-title">Genshin Impact</h5>
-                <p class="card-text">Fantasy RPG: Explore the vast and mysterious world of Teyvat, and discover your destiny</p>
-                <a href="#" class="btn btn-primary">See More</a>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="card">
-            <img src="./hoyoversewebsite/Honkai_Star_Rail.webp" class="card-img-top" alt="..." weight="200" height="200">
-            <div class="card-body">
-                <h5 class="card-title">Honkai: Star Rail</h5>
-                <p class="card-text">Turn-Based Sci-Fi: Board the Star Rail to traverse endless galaxies, where every choice is your fate.</p>
-                <a href="#" class="btn btn-primary">See More</a>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="card">
-            <img src="./hoyoversewebsite/Zenless_Zone_Zero.jpg" class="card-img-top" alt="..." weight="200" height="200">
-            <div class="card-body">
-                <h5 class="card-title">Zenless Zone Zero</h5>
-                <p class="card-text">Urban Fantasy Action RPG: Join the adventure in New Eridu and face challenges in a ruined city.</p>
-                <a href="#" class="btn btn-primary">See More</a>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="card">
-            <img src="./hoyoversewebsite/Honkai_nexus_anima.jpeg" class="card-img-top" alt="..." weight="200" height="200">
-            <div class="card-body">
-                <h5 class="card-title">Honkai: Nexus Anima</h5>
-                <p class="card-text">Enjoy the world of companionship, deploy your companion into a battle of chess.</p>
-                <a href="#" class="btn btn-primary">See More</a>
-            </div>
-        </div>
-    </div>
 
-</div>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
-
-<footer class="bg-dark text-white text-center p-3">
-    <p>&copy; 2024 Hoyoverse. All rights reserved.</p>
-</footer>
 </html>

@@ -1,0 +1,77 @@
+/* GAYA UMUM */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Warna teks gelap */
+    padding-top: 56px; /* Agar konten tidak tertutup navbar */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600; /* Font semi-bold */
+    text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #034827; /* Hijau tua */
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+a:hover {
+    /* Warna hijau terang saat cursor di atas, !important untuk memastikan anefek diterapkan */
+    color: #20c997 !important; 
+}
+
+/* BAGIAN HERO */
+.hero-section {
+    background: url('assets/hero-card.JPG') no-repeat center center/cover; /* Ganti dengan gambar hero yang Anda siapkan */
+    height: 60vh;
+    text-shadow: 
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+/* KARTU DEPARTEMEN & PROGRAM KERJA */
+.department-card, .program-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.department-card:hover, .program-card:hover {
+    transform: translateY(-5px); /* Efek melayang saat kursor di atas */
+}
+
+.department-card .card-body {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+#kontak {
+    background-color: #02301a; /* Hijau tua */
+    color: #fff;
+}
+
+/* Menghapus aturan hover spesifik untuk footer karena sudah ditangani secara global */
+/* 
+#kontak a:hover {
+    color: #20c997 !important; 
+}
+*/
+
+
+/* MODAL */
+.modal-header, .modal-footer {
+    border-color: #034827;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
